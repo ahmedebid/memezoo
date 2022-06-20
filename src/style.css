@@ -1,0 +1,77 @@
+/* -------------------------------------------- */
+/* Reset                                        */
+/* -------------------------------------------- */
+
+/* Source: https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for buttons */
+button {
+  font: inherit;
+}
+
+/* -------------------------------------------- */
+/* General Styles                               */
+/* -------------------------------------------- */
+
+body {
+    font-family: 'Karla', sans-serif;
+    font-size: 12px;
+    color: hsl(0 0% 5%);
+}
+
+/* -------------------------------------------- */
+/* Specific Styles                               */
+/* -------------------------------------------- */
+
+header {
+    display: flex;
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    padding: 20px;
+    gap: 7px;
+    justify-content: center;
+}
+
+.website-title {
+    font-size: 21px;
+    letter-spacing: -0.1em;
+    color: #fff;
+}
