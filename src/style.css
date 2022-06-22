@@ -44,7 +44,8 @@ img {
 }
 
 /* Inherit fonts for buttons */
-button {
+button,
+input {
   font: inherit;
 }
 
@@ -58,9 +59,19 @@ body {
     color: hsl(0 0% 5%);
 }
 
+main {
+  padding: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 /* -------------------------------------------- */
 /* Specific Styles                               */
 /* -------------------------------------------- */
+
+/* Header */
 
 header {
     display: flex;
@@ -74,4 +85,38 @@ header {
     font-size: 21px;
     letter-spacing: -0.1em;
     color: #fff;
+}
+
+/* Form */
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 477px;
+}
+
+#generate-button {
+  width: 100%;
+  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  border-radius: 5px;
+  border: none;
+  height: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: -0.1em;
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 36px;
+}
+
+#top-phrase,
+#bottom-phrase {
+  width: 48%;
+  max-width: 230px;
+  height: 35px;
+  border: 1px solid #D5D4D8;
+  border-radius: 5px;
+  text-indent: 11px;
 }
