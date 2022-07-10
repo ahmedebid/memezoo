@@ -11,6 +11,9 @@
 # production
 /build
 
+# commit message template
+commit-msg.txt
+
 # misc
 .DS_Store
 .env.local
