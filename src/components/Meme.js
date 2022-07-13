@@ -1,5 +1,4 @@
 import React from "react";
-import memesData from "../memesData";
 
 export default function Meme() {
 
@@ -9,12 +8,17 @@ export default function Meme() {
         randomImage: "https://i.imgflip.com/1h7in3.jpg"
     })
 
-    const [allMemeImages, setAllMemeImages] = React.useState(memesData);
+    const [allMemes, setAllMemes] = React.useState([]);
+
+    React.useEffect(() => {
+        fetch("https://api.imgflip.com/get_memes")
+            .then(res => res.json())
+            .then(fetchedData => setAllMemes(fetchedData.data.memes))
+    }, [])
 
     function getMemeImage() {
-        // Get random meme from memesData array
-        const randomMemeIndex = Math.floor(Math.random() * allMemeImages.data.memes.length);
-        const randomMemeUrl = allMemeImages.data.memes[randomMemeIndex].url;
+        const randomMemeIndex = Math.floor(Math.random() * allMemes.length);
+        const randomMemeUrl = allMemes[randomMemeIndex].url;
         setMeme(prevMeme => ({
             ...prevMeme,
             randomImage: randomMemeUrl
@@ -36,7 +40,7 @@ export default function Meme() {
                     type="text" 
                     id="top-phrase" 
                     name="topText" 
-                    placeholder="top text"
+                    placeholder="Top Text"
                     value={meme.topText}
                     onChange={handleChange} 
                 />
@@ -44,7 +48,7 @@ export default function Meme() {
                     type="text" 
                     id="bottom-phrase" 
                     name="bottomText" 
-                    placeholder="bottom text"
+                    placeholder="Bottom Text"
                     value={meme.bottomText}
                     onChange={handleChange} 
                 />
@@ -52,7 +56,7 @@ export default function Meme() {
                     id="generate-button" 
                     onClick={getMemeImage}
                 >
-                    Get a new meme image 🖼️
+                    Get New Meme 🤣
                 </button>
             </div>
             <div className="meme">

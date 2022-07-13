@@ -57,6 +57,7 @@ body {
     font-family: 'Karla', sans-serif;
     font-size: 12px;
     color: hsl(0 0% 5%);
+    background: #FAF0CA;
 }
 
 main {
@@ -75,16 +76,21 @@ main {
 
 header {
     display: flex;
-    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+    background: #3E2A35;
     padding: 20px;
-    gap: 7px;
     justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .website-title {
-    font-size: 21px;
-    letter-spacing: -0.1em;
+    font-size: 34px;
     color: #fff;
+    font-family: 'Rubik Puddles', cursive;
+}
+
+.logo-icon {
+  width: 60px;
 }
 
 /* Form */
@@ -99,12 +105,12 @@ header {
 
 #generate-button {
   width: 100%;
-  background: linear-gradient(90.41deg, #711F8D 1.14%, #A818DA 100%);
+  background: #3E2A35;
   border-radius: 5px;
   border: none;
   height: 40px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 20px;
   letter-spacing: -0.1em;
   color: #fff;
   cursor: pointer;
@@ -115,6 +121,7 @@ header {
 
 .meme {
   position: relative;
+  max-width: 477px;
 }
 
 .meme-text {
@@ -158,4 +165,5 @@ header {
   border: 1px solid #D5D4D8;
   border-radius: 5px;
   text-indent: 11px;
+  font-size: 18px;
 }
