@@ -4,7 +4,7 @@ A meme generator app built using React that uses the [Imgflip API](https://imgfl
 
 ## Screenshot
 
-In the project directory, you can run:
+![screenshot](https://drive.google.com/uc?export=view&id=1zN_gx7cNjt3bluM4wEaQ6OIzzITwXqi4)
 
 ### Note
 
