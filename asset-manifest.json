@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/memezoo/static/css/main.e58589c6.css",
+    "main.js": "/memezoo/static/js/main.0defe07c.js",
+    "static/media/logo.png": "/memezoo/static/media/logo.6357633c88ee9da6f745.png",
+    "index.html": "/memezoo/index.html",
+    "main.e58589c6.css.map": "/memezoo/static/css/main.e58589c6.css.map",
+    "main.0defe07c.js.map": "/memezoo/static/js/main.0defe07c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e58589c6.css",
+    "static/js/main.0defe07c.js"
+  ]
+}
